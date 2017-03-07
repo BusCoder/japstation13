@@ -153,10 +153,11 @@
 		spawn(5 SECONDS)
 			del(src)
 
-	if(!guests_allowed && IsGuestKey(key))
-		alert(src,"This server doesn't allow guest accounts to play. Please go to http://www.byond.com/ and register for a key.","Guest","OK")
-		del(src)
-		return
+	if (clients.len > 0) //server is setting up otherwise
+		if(!guests_allowed && IsGuestKey(key))
+			alert(src,"This server doesn't allow guest accounts to play. Please go to http://www.byond.com/ and register for a key.","Guest","OK")
+			del(src)
+			return
 
 	// Change the way they should download resources.
 	if(config.resource_urls)

@@ -102,6 +102,14 @@
 	dead_icon = "heart-off"
 	organ_type = /datum/organ/internal/heart
 
+/obj/item/organ/stomach
+	name = "stomach"
+	icon_state = "stomach"
+	organ_tag = "stomach"
+	fresh = 6 // Juicy.
+	dead_icon = "stomach"
+	organ_type = /datum/organ/internal/stomach
+
 /obj/item/organ/lungs
 	name = "human lungs"
 	icon_state = "lungs"

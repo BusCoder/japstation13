@@ -257,18 +257,21 @@
 
 /turf/simulated/floor/beach/water
 	name = "Water"
-	icon_state = "water"
+	icon = 'icons/japstation13/water.dmi'
+	icon_state = "water6"
+	plane = ABOVE_HUMAN_PLANE
+	//plane = ABOVE_HUMAN_PLANE
 
-/turf/simulated/floor/beach/water/New()
-	..()
-	var/image/water = image("icon"='icons/misc/beach.dmi',"icon_state"="water5")
-	water.plane = ABOVE_HUMAN_PLANE
-	overlays += water
+///turf/simulated/floor/beach/water/New()
+//	..()
+	//var/image/water = image("icon"='icons/misc/beach.dmi',"icon_state"="water5")
+//	water.plane = ABOVE_HUMAN_PLANE
+//	overlays += water
 
 /turf/simulated/floor/grass
 	name = "Grass patch"
 	icon_state = "grass1"
-	floor_tile
+	/*
 
 /turf/simulated/floor/grass/New()
 	if(floor_tile)
@@ -285,7 +288,7 @@
 				if(istype(get_step(src,direction),/turf/simulated/floor))
 					var/turf/simulated/floor/FF = get_step(src,direction)
 					FF.update_icon() //so siding get updated properly
-
+*/
 /turf/simulated/floor/carpet
 	name = "Carpet"
 	icon_state = "carpet"
