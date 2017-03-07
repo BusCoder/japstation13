@@ -125,7 +125,8 @@ var/global/list/whitelisted_species = list("Human")
 		"kidneys" =  /datum/organ/internal/kidney,
 		"brain" =    /datum/organ/internal/brain,
 		"appendix" = /datum/organ/internal/appendix,
-		"eyes" =     /datum/organ/internal/eyes
+		"eyes" =     /datum/organ/internal/eyes,
+		"stomach" =  /datum/organ/internal/stomach
 		)
 
 	//If we will apply mutant race overlays or not.

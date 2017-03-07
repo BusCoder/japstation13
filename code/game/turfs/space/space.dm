@@ -25,6 +25,8 @@
 	I.blend_mode = BLEND_ADD
 	overlays += I
 
+	..()
+
 /turf/space/attack_paw(mob/user as mob)
 	return src.attack_hand(user)
 

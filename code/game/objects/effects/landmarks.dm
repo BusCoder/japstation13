@@ -27,6 +27,7 @@
 		if("monkey")
 			monkeystart += loc
 			qdel(src)
+
 		if("start")
 			newplayer_start += loc
 			qdel(src)
