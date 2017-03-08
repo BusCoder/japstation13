@@ -49,9 +49,10 @@ var/list/parallax_icon[(GRID_WIDTH**2)*3]
 
 /obj/screen/plane_master/parallax_spacemaster/New()
 	..()
+	/*
 	overlays += image(icon = 'icons/mob/screen1.dmi', icon_state = "blank")
 	if(universe)
-		universe.convert_parallax(src)
+		universe.convert_parallax(src)*/ //Cherkir
 
 /obj/screen/plane_master/parallax_dustmaster
 	plane = PLANE_SPACE_DUST
