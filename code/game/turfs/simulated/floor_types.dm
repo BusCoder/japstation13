@@ -257,8 +257,8 @@
 
 /turf/simulated/floor/beach/water
 	name = "Water"
-	icon = 'icons/japstation13/water.dmi'
-	icon_state = "water6"
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "water_japan"
 	plane = ABOVE_HUMAN_PLANE
 	//plane = ABOVE_HUMAN_PLANE
 
@@ -270,7 +270,9 @@
 
 /turf/simulated/floor/grass
 	name = "Grass patch"
-	icon_state = "grass1"
+	icon = 'icons/japstation13/Grass.dmi'
+	icon_state = "Middle"
+//icon_state = "grass1"
 	/*
 
 /turf/simulated/floor/grass/New()

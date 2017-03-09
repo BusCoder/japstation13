@@ -137,6 +137,8 @@ var/global/list/whitelisted_species = list("Human")
 
 	var/meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/human
 
+	var/no_pressure = 0
+
 
 /datum/species/New()
 	..()
@@ -144,6 +146,11 @@ var/global/list/whitelisted_species = list("Human")
 		var/datum/species/globalspeciesholder = all_species[name]
 		default_blocks = globalspeciesholder.default_blocks.Copy()
 		default_mutations = globalspeciesholder.default_mutations.Copy()
+
+	//japstation
+
+	flags = flags|NO_BREATHE
+	no_pressure = 1
 
 /datum/species/Destroy()
 	if(myhuman)
@@ -266,6 +273,8 @@ var/global/list/whitelisted_species = list("Human")
 	primitive = /mob/living/carbon/monkey
 
 	anatomy_flags = HAS_SKIN_TONE | HAS_LIPS | HAS_UNDERWEAR | CAN_BE_FAT | HAS_SWEAT_GLANDS
+
+
 
 /datum/species/manifested
 	name = "Manifested"
