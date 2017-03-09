@@ -1,6 +1,8 @@
 //Refer to life.dm for caller
 
 /mob/living/carbon/human/proc/handle_environment(datum/gas_mixture/environment)
+	return
+/*
 	if(!environment || (flags & INVULNERABLE))
 		return
 	var/loc_temp = get_loc_temp(environment)
@@ -44,7 +46,7 @@
 
 	//Account for massive pressure differences.  Done by Polymorph
 	//Made it possible to actually have something that can protect against high pressure... Done by Errorage. Polymorph now has an axe sticking from his head for his previous hardcoded nonsense!
-	/*
+
 	var/pressure = environment.return_pressure()
 	var/adjusted_pressure = calculate_affecting_pressure(pressure) //Returns how much pressure actually affects the mob.
 	if(adjusted_pressure >= species.hazard_high_pressure)
@@ -63,10 +65,10 @@
 				adjustBruteLoss(LOW_PRESSURE_DAMAGE) //Space doubles damage (for some reason space vacuum is not station vacuum, nice snowflake)
 			pressure_alert = -2
 		else
-			pressure_alert = -1*/ //removed - Cherkir
+			pressure_alert = -1
 
 	if(environment.toxins > MOLES_PLASMA_VISIBLE)
-		pl_effects()
+		pl_effects()*/ //Ok this all has to be removed - Cherkir
 
 // Helper proc to map body temperatures to its corresponding heat/cold damage value
 /mob/living/carbon/human/proc/get_body_temperature_damage(var/temperature)
