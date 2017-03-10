@@ -109,6 +109,7 @@ var/datum/controller/gameticker/ticker
 
 
 /datum/controller/gameticker/proc/setup()
+
 	//Create and announce mode
 	if(master_mode=="secret")
 		src.hide_mode = 1
@@ -229,6 +230,7 @@ var/datum/controller/gameticker/ticker
 
 	wageSetup()
 
+
 	return 1
 
 /datum/controller/gameticker
@@ -271,6 +273,7 @@ var/datum/controller/gameticker/ticker
 					M.nuke_act()
 			else if(M.z == map.zMainStation) //on the station.
 				M.nuke_act()
+
 
 	//Now animate the cinematic
 	switch(station_missed)
@@ -328,7 +331,6 @@ var/datum/controller/gameticker/ticker
 	if(temp_buckle)
 		qdel(temp_buckle)	//release everybody
 	return
-
 
 /datum/controller/gameticker/proc/create_characters()
 	for(var/mob/new_player/player in player_list)
