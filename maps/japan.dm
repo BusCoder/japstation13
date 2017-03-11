@@ -26,38 +26,30 @@
 	var/island = 0
 	atmos = 0
 
-/area/japan/daimyo/Nagayoshi
-	name = "Nagayoshi Territory"
-	icon_state = "Nagayoshi"
+/area/japan/daimyo/Azai
+	name = "Azai Territory"
+	icon_state = "Azai"
 
-/area/japan/daimyo/Shingen
-	name = "Shingen Territory"
-	icon_state = "Shingen"
+/area/japan/daimyo/Oda
+	name = "Oda Territory"
+	icon_state = "Oda"
 
-/area/japan/daimyo/Kagetora
-	name = "Kagetora Territory"
-	icon_state = "Kagetora"
+/area/japan/daimyo/Takeda
+	name = "Takeda Territory"
+	icon_state = "Takeda"
 
-/area/japan/daimyo/Nobunaga
-	name = "Nobunaga Territory"
-	icon_state = "Nobunaga"
+/area/japan/daimyo/Uesugi
+	name = "Uesugi Territory"
+	icon_state = "Uesugi"
 
 //islands
 
 /area/japan/daimyo/island
 	island = 1
 
-/area/japan/daimyo/island/Sorin
-	name = "Sorin Territory"
-	icon_state = "Sorin"
-
-/area/japan/daimyo/island/Takahisa
-	name = "Takahisa Territory"
-	icon_state = "Takahisa"
-
-/area/japan/daimyo/island/Yoshikage
-	name = "Yoshikage Territory"
-	icon_state = "Yoshikage"
+/area/japan/daimyo/island/Asakura
+	name = "Asakura Territory"
+	icon_state = "Asakura"
 
 /area/japan/emperor
 	name = "Emperor's Territory"

@@ -2163,7 +2163,7 @@
 #include "interface\web\interface.dms"
 #include "maprendering\maprendering.dm"
 #include "maps\_map.dm"
-#include "maps\japstation.dm"
+#include "maps\japan.dm"
 #include "maps\japan.dmm"
 #include "maps\defficiency\areas.dm"
 #include "maps\defficiency\pipes.dm"
