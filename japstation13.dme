@@ -2156,6 +2156,8 @@
 #include "interface\skin.dmf"
 #include "interface\web\info.dms"
 #include "interface\web\interface.dms"
+#include "js13\bows.dm"
+#include "js13\weapons.dm"
 #include "maprendering\maprendering.dm"
 #include "maps\_map.dm"
 #include "maps\japan.dm"

@@ -540,7 +540,6 @@ window "Telecomms IDE"
 		anchor2 = 99,100
 		font-family = "sans-serif"
 		font-size = 9
-		background-color = #ffffff
 		saved-params = "max-lines"
 	elem "button2"
 		type = BUTTON
@@ -568,7 +567,6 @@ window "Telecomms IDE"
 		anchor2 = 100,80
 		font-family = "Courier"
 		font-size = 10
-		background-color = #ffffff
 		saved-params = ""
 		command = "cancel"
 		multi-line = true
@@ -777,6 +775,7 @@ window "mapwindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -792,9 +791,7 @@ window "mapwindow"
 		anchor2 = 100,100
 		font-family = "Arial"
 		font-size = 7
-		text-color = none
 		is-default = true
-		drop-zone = true
 		saved-params = "icon-size"
 
 window "outputwindow"
@@ -804,6 +801,7 @@ window "outputwindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -979,6 +977,7 @@ window "browserwindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Browser"
 		is-pane = true
@@ -1001,6 +1000,7 @@ window "infowindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Info"
 		is-pane = true
@@ -1010,11 +1010,10 @@ window "infowindow"
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = #ffffff
 		is-default = true
-		drop-zone = true
 		saved-params = ""
 		highlight-color = #00aa00
+		tab-background-color = none
 		allow-html = false
 		on-show = ".winset\"rpane.infob.is-visible=true;rpane.browseb.is-visible=true?rpane.infob.pos=130,0:rpane.infob.pos=65,0 rpane.textb.is-visible=true rpane.infob.is-checked=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=infowindow\""
 		on-hide = ".winset\"rpane.infob.is-visible=false;rpane.browseb.is-visible=true?rpane.browseb.is-checked=true rpane.rpanewindow.left=browserwindow:rpane.textb.is-visible=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=\""
@@ -1026,6 +1025,7 @@ window "window1"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		is-visible = false
 		border = sunken
 		saved-params = "pos;size;is-minimized;is-maximized"

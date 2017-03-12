@@ -132,7 +132,7 @@
 
 
 	if(!arrow)
-		to_chat(user, "You don't have anything nocked to [src].")
+		to_chat(user, "You don't have anything loaded in [src].")
 		return
 
 	if(user.restrained())
@@ -160,7 +160,7 @@
 		user.visible_message("[usr] draws back the string of [src]!","You continue drawing back the string of [src]!")
 		spawn(25) increase_tension(user)
 
-/obj/item/weapon/crossbow/afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag, params)
+/obj/item/weapon/crossbow/crossbow/afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag, params)
 
 	if (istype(target, /obj/item/weapon/storage/backpack ))
 		src.dropped()
@@ -185,7 +185,7 @@
 	else
 		spawn(0) Fire(target,user,params)
 
-/obj/item/weapon/crossbow/proc/Fire(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, params, reflex = 0)
+/obj/item/weapon/crossbow/crossbow/proc/Fire(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, params, reflex = 0)
 
 
 	add_fingerprint(user)
