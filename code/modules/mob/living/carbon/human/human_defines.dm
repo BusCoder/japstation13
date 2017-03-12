@@ -1,4 +1,6 @@
 /mob/living/carbon/human
+	//JAPAN
+	var/relationships[0]
 	//Hair colour and style
 	var/r_hair = 0
 	var/g_hair = 0

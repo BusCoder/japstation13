@@ -82,7 +82,7 @@ var/religion_name = null
 			station_name += name + " "
 
 	// Suffix
-	name = pick("Nippon", "Japan", "China", "Anime", "Internment Camp")
+	name = pick("Nippon", "Japan", "China", "Rice Field", "Internment Camp")
 	station_name += name + " "
 
 	// ID Number

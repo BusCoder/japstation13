@@ -902,8 +902,8 @@ SEE_PIXELS	256
 #define ROLE_WIZARD     "wizard"
 
 
-#define AGE_MIN 17			//youngest a character can be
-#define AGE_MAX 85			//oldest a character can be
+#define AGE_MIN 5			//youngest a character can be
+#define AGE_MAX 75			//oldest a character can be
 
 /*//Languages!
 #define LANGUAGE_HUMAN		1
